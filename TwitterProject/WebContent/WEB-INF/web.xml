@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" metadata-complete="true" version="3.0">
+  <context-param>
+    <param-name>consumerKey</param-name>
+    <param-value>axRCNV5caPgp3oUrdQj3UtRbR</param-value>
+  </context-param>
+  <context-param>
+    <param-name>consumerSecret</param-name>
+    <param-value>UpvUln4zrs7U4duaYgfYY4C9zNwLdnurvmkv4iQVjwDMnuQnrX</param-value>
+  </context-param>
+  <context-param>
+    <param-name>accessToken</param-name>
+    <param-value>3169643603-pIA0VgxD9txvZiXpdn01ZR2TKWylBirjsJmkCGR</param-value>
+  </context-param>
+  <context-param>
+    <param-name>accessTokenSecret</param-name>
+    <param-value>4WxK5MO3xr2Bkm2xVfoaijglpCaAPKK12fxwFxISCYvdE</param-value>
+  </context-param>
+ <servlet>
+     <servlet-name>TwitterLogin</servlet-name>
+     <servlet-class>project.TwitterLogin</servlet-class>
+ </servlet>
+ <servlet-mapping>
+     <servlet-name>TwitterLogin</servlet-name>
+     <url-pattern>/TwitterLogin</url-pattern>
+ </servlet-mapping>
+ <servlet>
+     <servlet-name>TwitterCallback</servlet-name>
+     <servlet-class>project.TwitterCallback</servlet-class>
+ </servlet>
+ <servlet-mapping>
+     <servlet-name>TwitterCallback</servlet-name>
+     <url-pattern>/TwitterCallback</url-pattern>
+ </servlet-mapping>
+ </web-app>
